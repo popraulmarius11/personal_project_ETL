@@ -38,5 +38,5 @@ if __name__ == '__main__':
     print(databasetransformer.numeric)
     final=databasetransformer.numeric
     deschise=databasetransformer.open_df
-    final.to_excel(r"C:\Users\Raul\Desktop\partea2proiect\1SCOALA-final.xlsx")
-    deschise.to_excel(r"C:\Users\Raul\Desktop\partea2proiect\1SCOALA-Deschise.xlsx")
+    final.to_excel(r"")
+    deschise.to_excel(r"")
