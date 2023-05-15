@@ -16,11 +16,11 @@ def read_database_paths():
     return lines
 
 if __name__ == '__main__':
-    #unittest.main()
+    #unittest.main()  #tests
     lines = read_database_paths()
     repository = Repository()  # Create an instance of the Repository class
 
-    for file_path in lines:
+    for file_path in lines: #reading all file_paths from paths.txt
         extractor = Extractor(file_path)
         extractor.read_csv()
         transformer = Transformer(extractor.numeric_questions, extractor.open_questions,
@@ -38,5 +38,7 @@ if __name__ == '__main__':
     print(databasetransformer.numeric)
     final=databasetransformer.numeric
     deschise=databasetransformer.open_df
+
+    #loading data into new databases
     final.to_excel(r"")
     deschise.to_excel(r"")
